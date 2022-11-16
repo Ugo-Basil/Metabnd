@@ -35,6 +35,7 @@ const HeroContainer = styled.div`
   height: 100%;
   display: flex;
   margin-top: 10px;
+  
 `;
 
 const HeroContent = styled.div`
@@ -44,7 +45,7 @@ const HeroContent = styled.div`
   justify-content: space-between;
   width: 100%;
   height: 459px;
-  padding: 0px 1.5rem;
+  padding: 0px 5rem;
   color: #fff;
 
   /* gap: 150px; */
@@ -62,18 +63,19 @@ const HeroItems = styled.div`
   color: #000;
   line-height: 1.1;
   font-weight: bold;
-  width: 60%;
+  width: 50%;
 `;
 
 const HeroH1 = styled.h1`
   margin-bottom: 1.5rem;
-  font-size: clamp(1.5rem, 6vw, 4rem);
-  letter-spacing: 3px;
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
   padding: 0;
   font-weight: bold;
   color: #000;
-  text-align: left;
-
+  text-align: justify;
+  width: 100%;
   .spanText {
     color: #a02279;
   }
@@ -141,9 +143,16 @@ const HeroImg = styled.div`
   justify-content: center;
   text-align: center;
   margin-top: 25px;
+  
   /* height: 100vh; */
   /* max-height: 100%; */
   /* margin-top: 50px; */
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: -50px;
+    }
 `;
 
 //Mobile View

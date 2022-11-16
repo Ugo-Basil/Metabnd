@@ -1,10 +1,15 @@
 import React from 'react'
-import { BtnContainer, Btn } from './navbtn.styles'
+import Modal from './Modal';
+import { BtnContainer} from './navbtn.styles'
+
+
+ 
 
 export const NavBtn = () => {
+ 
   return (
     <BtnContainer>
-      <Btn>Connect Wallet</Btn>
+      <Modal/>
     </BtnContainer>
-  )
+  );
 }

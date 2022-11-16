@@ -1,0 +1,19 @@
+.Cards{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    grid-gap: 1rem;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    z-index: -100;
+}
+
+.cardHeading{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

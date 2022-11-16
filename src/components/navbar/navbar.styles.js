@@ -7,8 +7,7 @@ const NavBarContainer = styled.div`
     box-shadow: 0 1px 3px rgba(15,15,15,0.13);
     display: flex;
     align-items: center;
-
-    padding: 0 1.5rem;
+    padding: 0 5rem;
 `;
 
 const LeftSection = styled.div`
