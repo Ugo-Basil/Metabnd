@@ -51,7 +51,7 @@
     padding-bottom: 5px;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     @media screen and (max-width: 550px){
         font-size: 10px;
 
