@@ -68,7 +68,7 @@ export const MobileNavLinks = () => {
             <Link href="/">Home</Link>
           </LinkItem>
           <LinkItem>
-            <Link href="/">Place to stay</Link>
+            <Link href="/placetostay">Place to stay</Link>
           </LinkItem>
           <LinkItem>
             <Link href="/">NFTs</Link>
@@ -76,7 +76,7 @@ export const MobileNavLinks = () => {
           <LinkItem>
             <Link href="/">Community</Link>
           </LinkItem>
-            <Marginer />
+          <Marginer />
           <LinkItem>
             <NavBtn />
           </LinkItem>
