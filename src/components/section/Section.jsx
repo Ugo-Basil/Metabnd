@@ -51,6 +51,7 @@ const SectionContent = styled.div`
   @media screen and (max-width: 550px) {
     flex-direction: column;
     padding: 0px 2rem;
+    width: 100%;
   }
 `;
 
@@ -83,6 +84,11 @@ const SectionH1 = styled.h1`
 const SectionP = styled.p`
   font-size: 1rem;
   width: 50%;
+
+  @media screen and (max-width: 550px) {
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 const SectionBtn = styled.button`
@@ -103,7 +109,7 @@ const SectionImg = styled.img`
   object-fit: cover;
 
   @media screen and (max-width: 820px) {
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
   }
 `;
