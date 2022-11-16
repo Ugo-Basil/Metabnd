@@ -34,8 +34,10 @@ const HeroContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  /* align-items: center;
+  justify-content: center; */
   margin-top: 10px;
-  
+
 `;
 
 const HeroContent = styled.div`
@@ -44,11 +46,20 @@ const HeroContent = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  height: 459px;
+  height: 100%;
   padding: 0px 5rem;
   color: #fff;
 
   /* gap: 150px; */
+
+  @media screen and (max-width: 820px) {
+    padding: 0px 2rem;
+  }
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    padding: 0px 2rem;
+  }
 `;
 
 const HeroItems = styled.div`
@@ -57,17 +68,22 @@ const HeroItems = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
-  max-height: 100%;
+  /* height: 100vh; */
+  /* max-height: 100%; */
   padding: 0;
   color: #000;
   line-height: 1.1;
   font-weight: bold;
   width: 50%;
+   
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
 `;
 
 const HeroH1 = styled.h1`
   margin-bottom: 1.5rem;
+  margin-top: 2rem;
   font-size: 56px;
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -79,20 +95,28 @@ const HeroH1 = styled.h1`
   .spanText {
     color: #a02279;
   }
+
+  @media screen and (max-width: 820px) {
+    font-size: 20px;
+    margin-top: 2rem;
+  }
 `;
 
 const HeroP = styled.p`
-  font-size: 14px;
+ 
   margin-bottom: 2rem;
   text-align: left;
   color: #000;
-
   font-family: "Red Rose";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
   padding: 0;
+
+  @media screen and (max-width: 820px) {
+    font-size: 18px;
+  }
 `;
 const SearchBar = styled.form`
   display: flex;
@@ -102,7 +126,7 @@ const SearchBar = styled.form`
   padding: 0;
   color: #000;
   font-weight: bold;
-    width: 100%;
+  width: 100%;
 `;
 
 const InputText = styled.input`
@@ -120,6 +144,10 @@ const InputText = styled.input`
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+  }
 `;
 
 const HeroBtn = styled.button`
@@ -134,6 +162,11 @@ const HeroBtn = styled.button`
   font-family: "Red Rose";
   font-style: normal;
   height: 50px;
+
+  @media screen and (max-width: 550px) {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
 `;
 
 const HeroImg = styled.div`
@@ -152,7 +185,26 @@ const HeroImg = styled.div`
     height: 100%;
     object-fit: cover;
     padding-left: -50px;
+    
     }
+
+  @media screen and (max-width: 820px) {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding-left: 50px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    img{
+      padding-left: 0;
+    }
+  }
 `;
 
 //Mobile View

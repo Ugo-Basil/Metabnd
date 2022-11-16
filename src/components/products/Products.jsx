@@ -6,7 +6,7 @@ import { FaStar, FaHeart } from "react-icons/fa";
 const Products = (props) => {
   return (
     <>
-      {/* <h1 className="card-heading">Inspiration for your next adventure</h1> */}
+      
       <div className="productList">
         <div key={props.id} className="productCard">
           <img src={props.image} alt="product-img" className="productImage" />

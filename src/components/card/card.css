@@ -17,3 +17,34 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+
+/* Tablets */
+
+@media screen and (max-width: 768px){
+    .Cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cardHeading{
+        font-size: 1.5rem;
+        font-weight: 500;
+      
+    }
+}
+
+@media screen and (max-width: 912px){
+    .Cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    
+
+
+
+@media screen and (max-width: 550px){
+    .Cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+    

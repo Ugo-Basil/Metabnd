@@ -68,18 +68,46 @@ const FooterContainer = styled.div`
   border: 1px solid #000000;
   color: #fff;
   padding: 0 5rem;
+
+  @media screen and (max-width: 912px) {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+
+
+
 `;
 
 const FooterContent = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 0px -5rem;
-    color: #fff;
-    gap: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px -5rem;
+  color: #fff;
+  gap: 90px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 912px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 const FooterItems = styled.div`
@@ -100,6 +128,24 @@ const FooterLogo = styled.img`
   /* margin-bottom: 200px; */
   margin-bottom: 140px;
   color: #fff;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 60px;
+    width: 50%;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    margin-bottom: 60px;
+    width: 50%;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
 `;
 
 const FooterSocial = styled.div`
@@ -114,8 +160,6 @@ const FooterSocial = styled.div`
   gap: 30px;
   transition: 0.3s ease-in-out;
   img {
-    /* width: 50px;
-        height: 50px; */
     object-fit: cover;
   }
 
@@ -123,6 +167,20 @@ const FooterSocial = styled.div`
     transform: scale(1.3);
     transition: 0.3s ease-in-out;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    width: 40%;
+  }
+
+  @media screen and (max-width: 912px) {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    gap: 10px;
+    width: 40%;
   }
 `;
 

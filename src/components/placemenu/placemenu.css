@@ -11,6 +11,16 @@
     background: #F5F5F5;
 }
 
+/* Tablets */
+@media screen and (max-width: 768px){
+    .menu__Container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
 .menu__Item{
     display: flex;
     flex-direction: row;
@@ -52,7 +62,7 @@
     background: #A02279;
     color: #F5F5F5;
 }
-.dropdown{
+.dropdown, .btn_cta{
     display: none;
 }
 
@@ -68,4 +78,34 @@
         height: 100%;
         background: #F5F5F5;
     }
+    .btn_cta{
+        display:block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #F5F5F5;
+        margin-top: 10px;
+    }
 }
+
+@media screen and (max-width: 912px){
+      .menu__Item{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #F5F5F5;
+    }
+    .btn_cta{
+        display:block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #F5F5F5;
+        margin-top: 10px;
+    }
+}
+    

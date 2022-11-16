@@ -52,9 +52,13 @@ const PlaceMenu = () => {
           </button>
         </div>
       </div>
-
       <div className="dropdown">
         <Dropdown />
+      </div>
+      <div className="btn_cta">
+        <button>
+          Location <FaSlidersH />
+        </button>
       </div>
     </div>
   );

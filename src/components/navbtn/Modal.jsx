@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import shiba from "../../assets/shiba.png";
+import wallet from "../../assets/wallet.png";
 
 import { BiX } from "react-icons/bi";
 import { Btn } from "./navbtn.styles";
@@ -39,7 +41,7 @@ export default function Modal() {
               <div className="modal-body__item">
                 <img
                   className="image"
-                  src="https://cdn.worldvectorlogo.com/logos/metamask.svg"
+                  src={shiba}
                   alt="metamask"
                 />
                 <a className="modal-link" href="/">
@@ -50,8 +52,8 @@ export default function Modal() {
               <div className="modal-body__item">
                 <img
                   className="image"
-                  src="https://cdn.worldvectorlogo.com/logos/metamask.svg"
-                  alt="metamask"
+                  src={wallet}
+                  alt="walletconnect"
                 />
                 <a className="modal-link" href="/">
                   WalletConnect

@@ -14,7 +14,7 @@ import {
 import { NavLinks } from "./NavLinks";
 
 const Navbar = (props) => {
-const isMobile = useMediaQuery({maxWidth: DeviceSize.mobile});
+const isMobile = useMediaQuery({maxWidth: DeviceSize.mobile });
 
   return (
     <NavBarContainer>
